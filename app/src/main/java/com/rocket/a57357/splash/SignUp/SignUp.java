@@ -20,6 +20,8 @@ Button btn;
             @Override
             public void onClick(View view) {
                 Toast.makeText(SignUp.this,"agamy",Toast.LENGTH_LONG).show();
+                Toast.makeText(SignUp.this,"agamy",Toast.LENGTH_LONG).show();
+
             }
         });
     }
