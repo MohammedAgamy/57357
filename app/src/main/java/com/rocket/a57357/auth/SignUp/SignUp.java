@@ -1,4 +1,4 @@
-package com.rocket.a57357.splash.SignUp;
+package com.rocket.a57357.auth.SignUp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +19,6 @@ Button btn;
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(SignUp.this,"agamy",Toast.LENGTH_LONG).show();
                 Toast.makeText(SignUp.this,"agamy",Toast.LENGTH_LONG).show();
 
             }
