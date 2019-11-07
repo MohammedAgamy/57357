@@ -55,6 +55,8 @@ public class splash extends AppCompatActivity {
 
     }
 
+
+
     private void Splash() {
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -63,5 +65,4 @@ public class splash extends AppCompatActivity {
             }
         },2000);
     }
-
 }
