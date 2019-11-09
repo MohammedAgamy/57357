@@ -23,8 +23,12 @@ public class Home extends AppCompatActivity {
         zakatEelmal_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                firstFragment fragment = new firstFragment();
+                Bundle arg = new Bundle();
+                arg.putParcelable("Information",new InformationOB(R.string.zakatElmalHeader,R.string.zakah_elmal));
                 FragmentManager fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.fragment_container,new firstFragment()).addToBackStack( "tag" ).commit();
+                fragmentManager.beginTransaction().replace(R.id.fragment_container,fragment).addToBackStack( "tag" ).commit();
+                fragment.setArguments(arg);
             }
         });
 
