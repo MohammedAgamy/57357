@@ -31,7 +31,7 @@ public class splash extends AppCompatActivity {
 
     public void iniview() {
         mImage = findViewById(R.id.logo);
-        mAnim = AnimationUtils.loadAnimation(this, R.anim.anmi_splash);
+        mAnim = AnimationUtils.loadAnimation( this, R.anim.anmi_splash);
     }
 
     private void Anim() {

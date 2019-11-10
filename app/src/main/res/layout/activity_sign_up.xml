@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_signup" />
 
     <EditText
-        android:id="@+id/Email_Sign_IN"
+        android:id="@+id/Email_Sign_up"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginHorizontal="30dp"
@@ -54,7 +54,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Name" />
     <EditText
-        android:id="@+id/Password_Sign_IN"
+        android:id="@+id/Password_Sign_up"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginHorizontal="30dp"
@@ -64,7 +64,7 @@
         android:paddingLeft="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Email_Sign_IN" />
+        app:layout_constraintTop_toBottomOf="@id/Email_Sign_up" />
 
 
 
@@ -81,7 +81,7 @@
         android:textColor="@color/white"
         android:textSize="35dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Password_Sign_IN" />
+        app:layout_constraintTop_toBottomOf="@id/Password_Sign_up" />
 
     <Button
         android:id="@+id/Go_Home"
@@ -96,6 +96,6 @@
         android:textColor="@color/white"
         android:textSize="35dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Password_Sign_IN" />
+        app:layout_constraintTop_toBottomOf="@id/Password_Sign_up" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
