@@ -308,6 +308,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/kfaltElmarid_view"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_alignParentRight="true"
@@ -346,6 +347,7 @@
                     app:layout_constraintTop_toBottomOf="@id/second_relative">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/eltabra_elshahri"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_alignParentLeft="true"

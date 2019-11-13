@@ -15,13 +15,6 @@ import com.rocket.a57357.R;
  * A simple {@link Fragment} subclass.
  */
 public class SecondFragment extends Fragment {
-
-
-    public SecondFragment() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

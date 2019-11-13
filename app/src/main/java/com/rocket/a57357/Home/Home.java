@@ -42,6 +42,22 @@ public class Home extends AppCompatActivity {
                 fragmentManager.beginTransaction().replace(R.id.fragment_container,new SecondFragment()).addToBackStack( "tag" ).commit();
             }
         });
+        CardView eltabroaElshahriView = findViewById(R.id.eltabra_elshahri);
+        eltabroaElshahriView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                information = new InformationOB(R.string.eltabra_elshahri,R.string.eltabra_elshahri_dis);
+                goingToFirstFragment(information);
+            }
+        });
+        CardView kfaltElmaridView = findViewById(R.id.kfaltElmarid_view);
+        kfaltElmaridView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                information = new InformationOB(R.string.kfala_alag,R.string.kfala_alag_dis);
+                goingToFirstFragment(information);
+            }
+        });
     }
     private void goingToFirstFragment(InformationOB information){
         arg.putParcelable("Information",information);
