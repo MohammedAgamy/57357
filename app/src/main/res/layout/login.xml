@@ -42,6 +42,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_signup" />
 
     <EditText
+        android:inputType="numberPassword"
         android:id="@+id/Password_Sign_IN"
         android:layout_width="match_parent"
         android:layout_height="70dp"
