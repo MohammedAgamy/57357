@@ -8,33 +8,7 @@
     tools:context=".Home.Home"
     android:fitsSystemWindows="true"
     android:layout_gravity="left"
-    tools:openDrawer="left"
-    >
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#A8000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:fitsSystemWindows="true"
-        android:layout_gravity="left"
-
-        >
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
-
-            <include layout="@layout/nav"
-                />
-        </LinearLayout>
-
-
-
-    </com.google.android.material.navigation.NavigationView>
-
-
+    tools:openDrawer="left">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -82,21 +56,10 @@
                     android:id="@+id/V_page"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
+                    android:background="@drawable/concartolashn"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" >
-
-
-                    <LinearLayout
-                        android:id="@+id/SliderDots"
-                        android:layout_below="@+id/viewPager"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical|center_horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-
-
-                </androidx.viewpager.widget.ViewPager>
+                    app:layout_constraintTop_toTopOf="parent" />
                 <!--- Card one-->
 
                 <androidx.cardview.widget.CardView
@@ -275,6 +238,7 @@
 
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/elsadka_elgarya"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_alignParentRight="true"
@@ -461,5 +425,19 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
 
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#A8000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                layout="@layout/nav"
+                android:fitsSystemWindows="true"
+                />
+
+        </com.google.android.material.navigation.NavigationView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.drawerlayout.widget.DrawerLayout>
