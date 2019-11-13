@@ -24,13 +24,10 @@ public class firstFragment extends Fragment {
         Bundle bundle = this.getArguments();
         if (bundle != null){
             InformationOB information = bundle.getParcelable("Information");
-
             TextView headerText = rootView.findViewById(R.id.header_text_view);
             headerText.setText(information.getHeader());
-
             TextView descriptionTextView = rootView.findViewById(R.id.description_text_view);
             descriptionTextView.setText(information.getDescription());
-
         }
         return  rootView;
     }
