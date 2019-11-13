@@ -58,6 +58,14 @@ public class Home extends AppCompatActivity {
                 goingToFirstFragment(information);
             }
         });
+        CardView eltatoaView = findViewById(R.id.eltatoa_view);
+        eltatoaView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                information = new InformationOB(R.string.elmotatoain_program,R.string.elmotatoain_program_dis);
+                goingToFirstFragment(information);
+            }
+        });
     }
     private void goingToFirstFragment(InformationOB information){
         arg.putParcelable("Information",information);
