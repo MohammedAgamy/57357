@@ -29,8 +29,16 @@ public class Home extends AppCompatActivity {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 fragmentManager.beginTransaction().replace(R.id.fragment_container,fragment).addToBackStack( "tag" ).commit();
                 fragment.setArguments(arg);
+
             }
         });
-
+        CardView elsadkaElgarayaView = findViewById(R.id.elsadka_elgarya);
+        elsadkaElgarayaView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.fragment_container,new SecondFragment()).addToBackStack( "tag" ).commit();
+            }
+        });
     }
 }
